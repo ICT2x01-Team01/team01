@@ -46,4 +46,5 @@ Proin non consequat lectus. Fusce tristique pretium diam vitae ullamcorper. Cura
 </p>
 
 <h2>Feedbacks/Bugs Reporting</h2>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfTCzxHlmLBTDJzQ5-XcXZc1b_8I22vrUhUSR8NgNNsQaKoXQ/viewform?embedded=true" width="640" height="754" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+<p align="justify">Please provide your feedbacks and report on bugs found in SafeReality 
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfTCzxHlmLBTDJzQ5-XcXZc1b_8I22vrUhUSR8NgNNsQaKoXQ/viewform?embedded=true">here</a>. Thank you!</p>
