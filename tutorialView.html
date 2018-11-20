@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <!-- Position (-veleft/+veright, -veDown/+veUp, -veForward/+veBackward) -->
+<a-scene>
+  
+  <a-entity id="personView" position="0 2 15">
+    <a-camera>
+      <a-entity position="0 0 -3" geometry="primitive: ring; radiusInner: 0.2; radiusOuter: 0.3;" material="color: cyan; shader: flat" cursor="maxDistance: 30; fuse: true">
+        <a-animation begin="click" easing="ease-in" attribute="scale" fill="forwards" from="0.2 0.2 0.2" to="1 1 1" dur="150"></a-animation>
+        <a-animation begin="fusing" easing="ease-in" attribute="scale" fill="backwards" from="1 1 1" to="0.2 0.2 0.2" dur="1500"></a-animation>
+      </a-entity>
+    </a-camera>
+  </a-entity>
+  
+  <a-assets>
+  <video id="tutorial" autoplay loop="true"
+        src="https://cdn.glitch.com/9233de66-b45d-4647-928d-3fa5216fb051%2FDdu.mp4?1542181451066"
+          webkit-playsinline playsinline>
+    </video>
+  </a-assets>
+  <a-video src="#tutorial" width="16" height="9" position="0 5 6">
+  </a-video>
+  
+<!-- Link to go to sharedPathScene.html -->
+  <a-assets>
+    <img id="home">
+  </a-assets>
+  <a-entity position="8 2 10" rotation="0 -45 0" link="href: index.html; title: Back to Home; titleColor: black; backgroundColor: red;"></a-entity>
+
+      <!-- Sky colour -->
+  <a-sky color="#87cefa"></a-sky>
+      <!--   Ground Path -->
+  <a-plane id="greenPatch" position="0 -0.99999 0" rotation="-90 0 0" scale="1 20 1" width="60" height="60" color="#228b22"></a-plane>
+    </a-scene>
+  </body>
+</html>
